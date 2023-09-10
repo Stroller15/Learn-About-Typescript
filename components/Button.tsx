@@ -1,21 +1,16 @@
 
 import React from "react";
 
-type Color = "red" | "blue" | "black";
+type Color = "red" | "blue" | "green";
 
 
-type ButtonProps = {
-  backgroundColor: Color;
-  textColor?: Color;
-  fontSize: number;
-  isRed?: boolean;
+interface ButtonProps {
+  Color: "red" | "green";
 }
 
-const button = ({
-  backgroundColor,
-  fontSize,
-  isRed,
-}: ButtonProps) => {
+
+
+const Button = () => {
   return (
     <div>
       <button className="bg-blue-500 text-white rounded px-4 py-2">
@@ -25,4 +20,4 @@ const button = ({
   );
 };
 
-export default button;
+export default Button;
