@@ -3,7 +3,7 @@ import React from "react";
 type ButtonProps = {
   backgroundColor: string;
   fontSize: number;
-  isred: boolean;
+  isred?: boolean;
 }
 
 const button = ({
