@@ -1,21 +1,13 @@
 
-import React from "react";
-
-type Color = "red" | "blue" | "green";
-
-
-interface ButtonProps {
-  Color: "red" | "green";
-}
-
-
 
 const Button = () => {
+
+  const handleClick = (event: MouseEvent<HTMLButtonElement, MouseEvent>) =>
+    console.log("jack");
+
   return (
     <div>
-      <button className="bg-blue-500 text-white rounded px-4 py-2">
-        Click me
-      </button>
+      <button onClick={handleClick}>Click me</button>
     </div>
   );
 };
