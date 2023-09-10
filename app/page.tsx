@@ -5,6 +5,7 @@ export default function Home() {
       <Button
        backgroundColor='red'
        fontSize={12}
+       
       
       />
     </main>

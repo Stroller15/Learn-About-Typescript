@@ -1,9 +1,12 @@
+
 import React from "react";
+
+type Color = "red" | "blue" | "black";
 
 
 type ButtonProps = {
-  backgroundColor: "red" | "blue" | "black";
-  textColor: "red" | "blue" | "black";
+  backgroundColor: Color;
+  textColor?: Color;
   fontSize: number;
   isRed?: boolean;
 }
