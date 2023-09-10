@@ -1,15 +1,17 @@
 import React from "react";
 
+
 type ButtonProps = {
-  backgroundColor: string;
+  backgroundColor: "red" | "blue" | "black";
+  textColor: "red" | "blue" | "black";
   fontSize: number;
-  isred?: boolean;
+  isRed?: boolean;
 }
 
 const button = ({
   backgroundColor,
   fontSize,
-  isred,
+  isRed,
 }: ButtonProps) => {
   return (
     <div>
